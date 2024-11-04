@@ -19,13 +19,14 @@ Vous pouvez également vendre vos plantes pour gagner de l'argent que vous pouve
 - Inventaire : Consultez votre inventaire, qui comprend l'argent, les graines, les plantes et les outils.
 - Classement : Un classement des 10 utilisateurs les plus riches.
 - Language : Choissisez la langue d'affichage de votre jeu (FR/EN).
+  
 ![commande sos](./readme_assets/language.png)
 
 ## Backup des données
 
-- Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date JJ-MM-AAAA_-_HH-MM.
+- Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date `JJ-MM-AAAA_-_HH-MM`.
   
-- Attention ! selon la capacité de votre hébergement il est préférable de supprimer les backups les plus anciens fréquemment (Gardez les 10 derniers).
+- Attention ! selon la capacité de votre hébergement il est préférable de supprimer les backups les plus anciens fréquemment (*Gardez les 10 derniers*).
 
 
 ## Commandes de jeu <permission: utilisateur>
