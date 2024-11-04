@@ -211,11 +211,6 @@ Ce fichier contient :
 
 ![config](./readme_assets/config.png)
 
-## Contribution
-Si vous souhaitez contribuer à ce projet, veuillez contacter Thierry Breure à cette adresse mail : `thierry.breure@gmail.com`
-
-## Licence
-Ce projet n'est pas sous licence.
 
 ## Installation
 
@@ -298,3 +293,9 @@ Le dossier est compressé en .zip et nommé au format de date JJ-MM-AAAA_-_HH-MM
 Il est primordial de nettoyer les backups lorsqu'ils s'accumulent trop, je recommande de conserver les 10/20 derniers backups.
 Cela permet de récupérer une sauvegarde récente d'un utilisateur qui subirai ce bug.
 A ce jour, aucun correctif n'a été appliqué à ce problème, libre à vous d'y jeter un œil, d'après moi cela pourrais venir de la fonction saveDb() dans le fichier "fonctions.js".
+
+## Contribution
+Si vous souhaitez contribuer à ce projet libre à vous, cependant n'hésitez pas à me le faire savoir : `thierry.breure@gmail.com`
+
+## Licence
+Ce projet n'est pas sous licence.
