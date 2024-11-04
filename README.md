@@ -23,8 +23,9 @@ Vous pouvez également vendre vos plantes pour gagner de l'argent que vous pouve
 
 ## Backup des données
 
-Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date JJ-MM-AAAA_-_HH-MM.
-Attention ! selon la capacité de votre hébergement il est préférable de supprimer les backups les plus anciens fréquemment (Gardez les 10 derniers).
+- Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date JJ-MM-AAAA_-_HH-MM.
+  
+- Attention ! selon la capacité de votre hébergement il est préférable de supprimer les backups les plus anciens fréquemment (Gardez les 10 derniers).
 
 
 ## Commandes de jeu <permission: utilisateur>
