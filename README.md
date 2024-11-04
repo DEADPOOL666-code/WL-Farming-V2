@@ -245,6 +245,8 @@ Ce projet n'est pas sous licence.
 
 ### Fichier .env
 
+Récupérez le fichier .env à compléter dans le dossier compressé "fichier env.rar"
+
 ![installation bot](./readme_assets/install_bot6.png)
 
 - `token` le token de l'application Discord à récupérer sur le [Portail Dev Discord](https://discord.com/developers/applications) (*section Bot*).
