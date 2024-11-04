@@ -1,32 +1,32 @@
 # WL Farming V2 [FR/EN]
 
 ## Introduction
-```
+
 Le bot offre une variété de fonctionnalités pour améliorer l'interaction et l'engagement sur votre serveur Discord. 
 Un système de boutons et de menus a été mis en place pour rendre l'utilisation du bot aussi simple que possible.
-```
+
 ## Description
-```
+
 WL Farming V2 est un bot de divertissement qui vous permet de gérer une culture virtuelle et de gagner des $WL en cultivant et en vendant vos récoltes.
 Vous pouvez acheter des graines, planter les graines dans les 4 parcelles de votre plantation, et les récolter lorsqu'elles sont prêtes. 
 Vous pouvez également vendre vos plantes pour gagner de l'argent que vous pouvez dépenser dans la boutique pour acheter de nouveaux outils et de nouvelles graines.
-```
+
 ## Fonctionnalités
-```
+
 - Plantation et récolte : Vous pouvez planter des graines dans les parcelles de votre plantation et les récolter lorsqu'elles sont prêtes.
 - Vente de plantes : Vous pouvez vendre vos plantes au marchand pour gagner de l'argent.
 - Achat d'objets : Vous pouvez acheter des graines, des outils et de l'engrai avec l'argent que vous gagnez.
 - Inventaire : Consultez votre inventaire, qui comprend l'argent, les graines, les plantes et les outils.
 - Classement : Un classement des 10 utilisateurs les plus riches.
 - Language : Choissisez la langue d'affichage de votre jeu (FR/EN).
-```
+![commande sos](./readme_assets/language.png)
 
 ## Backup des données
-```
-- Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date JJ-MM-AAAA_-_HH-MM.
+
+Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date JJ-MM-AAAA_-_HH-MM.
 Attention ! selon la capacité de votre hébergement il est préférable de supprimer les backups les plus anciens fréquemment (Gardez les 10 derniers).
 
-```
+
 ## Commandes de jeu <permission: utilisateur>
 
 ### `/sos`
@@ -110,7 +110,7 @@ Options :
 ![commande objet](./readme_assets/objet.png)
 
 ## Fonctionnement 
-```
+
 L'utilisateur possède 4 parcelles (slots) dans sa plantation.
 Il peut acheter divers types de graines qui ont des niveaux de difficulté différentes.
 Le niveau de difficulté se traduit par le nombre d'arrosages nécessaires.
@@ -126,7 +126,7 @@ Lorsqu'une parcelle subit une attaque parasitaire la plante à 40% de chance de 
 L'utilisateur peut fertiliser ses plantes pour augmenter leur niveau de qualité de 1.
 
 L'arrosoir est un objet définitif, un seul arrosoir suffit pour une infinité d'arrosages.
-```
+
 
 ```
 Il existe 5 niveaux de récolte :
@@ -140,7 +140,7 @@ Il existe 5 niveaux de récolte :
 ## Détail technique 
 
 ### Les boutons
-```
+
 Pour éviter les bugs/glitches et les utilisations mal intentionnées, certains boutons sont désactivés lorsque l'utilisateur ne remplit pas certaines conditions,
 par exemple, après avoir cliqué sur le bouton "planter", de nouveaux boutons apparaissent (1 bouton pour chaque variété de graine disponible dans le jeu).
 Si l'utilisateur ne possède pas un type de graine, le bouton associé sera désactivé.
@@ -149,19 +149,19 @@ Lorsqu'une parcelle est traitée contre les parasites ou si l'utilisateur ne pos
 Tant que la parcelle n'est pas prête à être récoltée, le bouton "Récolter" est désactivé.
 Tant que la parcelle n'est pas libre, le bouton "Planter" est désactivé.
 Lorsqu'un utilisateur récolte ou plante, le bouton "Retour" sera désactiver le temps que la sauvegarde s'effectue.
-```
+
 ### Les commandes
-```
+
 Des vérifications sont effectuées à chaque fois qu'un utilisateur exécute une commande.
 Ces vérifications s'assurent que l'utilisateur est enregistré dans la base de données et qu'il possède les permissions pour effectuer la commande.
 Si l'utilisateur n'est pas enregistré, il ne pourra pas accéder à la boutique, au marchand, à ses plantations et à son inventaire.
-```
+
 ## Structure des données
-```
+
 Les données sont stockées de manière à optimiser au maximum les interactions entre le bot et les utilisateurs.
 Chaque utilisateur a sa propre sauvegarde et est identifié par son ID Discord (unique et non modifiable).
 Les objets du jeu sont stockés dans un fichier "database" qui contient toutes les informations nécessaires au bon fonctionnement du bot.
-```
+
 ### Utilisateurs
 Chaque utilisateur est représenté par un objet JSON qui contient les propriétés suivantes :
 
