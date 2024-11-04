@@ -212,36 +212,57 @@ Ce projet n'est pas sous licence.
 1. Connectez-vous sur le site [discord.com/developers](https://discord.com/developers/applications) avec votre compte Discord.
 2. Créez une nouvelle application.
 3. Dans la section "Bot" cochez les paramètres suivants : Public Bot | Presence Intent | Server Members Intent | Message Content Intent et sauvegardez.
+
 ![installation bot](./readme_assets/install_bot.png)
 
 4. Dans la section "OAuth2" cochez la cases "bot" dans la rubrique SCOPES.
+
 ![installation bot](./readme_assets/install_bot2.png)
 
 5. Dans la section "OAuth2" cochez la cases "Administrateur" dans la rubrique BOT PERMISSIONS.
+
 ![installation bot](./readme_assets/install_bot3.png)
 
 6. Copier le lien généré en bas de la page (c'est le lien d'invitation du bot).
+
 ![installation bot](./readme_assets/install_bot4.png)
 
 7. Collez ce lien dans votre navigateur et invitez le bot sur le serveur Discord de votre choix.
+
 ![installation bot](./readme_assets/install_bot5.png)
 
 ## Configuration du token, clientId et guildId dans les fichiers du bot :
 
 ### Fichier .env
+
 ![installation bot](./readme_assets/install_bot6.png)
 
 - `token` le token de l'application Discord à récupérer sur le [Portail Dev Discord](https://discord.com/developers/applications) (*section Bot*).
-- `clientId` l'identifiant Discord du bot à récupérer sur le [Portail Dev Discord](https://discord.com/developers/applications) (*section General Information sous l'intitulé "Application ID"*)
-  ou directement sur le profil du bot sur Discord via l'option mode développeur (*Paramètre - Avancés - Mode développeur*).
+- `clientId` l'identifiant Discord du bot à récupérer sur le [Portail Dev Discord](https://discord.com/developers/applications) (*section General Information sous l'intitulé "Application ID"*) ou directement sur le profil du bot sur Discord via l'option mode développeur (*Paramètre - Avancés - Mode développeur*).
 - `guildId` l'identifiant du serveur Discord sur lequel le bot sera utilisé.
 
 ### Fichier config.json
+
+![config](./readme_assets/config.png)
 
 - `botId`  l'identifiant Discord du bot (**identique au cliendId du fichier .env**).
 - `farmingChannel` c'est l'identifiant du salon dans lequel le bot enverra les messages public.
 - `devMode` true = mode maintenance activé (*Bot utilisable uniquement par "devID"*).
 - `devID` identifiant de l'utilisateur qui s'occupe de l'aspect technique du bot ou le propriétaire.
+
+### Dépendance NPM
+
+![package](./readme_assets/package.png)
+
+- `discord.js` 
+- `archiver`
+- `node-cron`
+- `dotenv`
+- `fs`
+- `node`
+
+Pour que le bot fonctionne, l'installation de ces dépendances est **OBLIGATOIRE !**
+La commande `npm install` s'occupera d'installer les dépendances listé dans le fichier package.json (*à faire dans le terminal ou la console*)
 
 ### Fichier database.json dans le dossier database
 
@@ -249,7 +270,15 @@ Le fichier **database.json** stock toutes les informations nécessaire au bon fo
 C'est dans ce fichier que les temps de croissance peuvent être modifier dans la section ["graine" -> "kush" -> "temps"] (*la valeur est en minutes, donc pour paramétrer un temps de croissance à 1 heure : ajuster la valeur à 60*)
 Modifiez les prix, les valeurs et les temps selon vos préférences.
 
-## Maintenance et bug connu
+### Démarrage du bot
+
+1. Dans le terminal ou la console tapez la commande `node deploy-commands.js` afin de déployer les commandes du bot sur Discord.
+2. Toujours dans le terminal ou la console tapez la commande `node index.js` afin de démarrer le bot.
+3. Enjoy 😉 le bot est connecté !
+
+![online](./readme_assets/online_bot.png)
+
+## Maintenance et bug connu ⚠️
 
 Un bug vide le fichier de sauvegarde d'un utilisateur, ce qui l'empèche d'utiliser le bot et lui fait perdre sa progression.
 Un système de backup a donc été mis en place afin de limité la casse, une sauvegarde est éffectuée dans le dossier "backups" toutes les heures.
