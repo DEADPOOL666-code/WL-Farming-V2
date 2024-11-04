@@ -1,0 +1,12 @@
+{
+  "bot": {
+    "botId": "**** ID DU BOT ****",
+    "botColor": "#940bc5",
+    "devise": "$WL",
+    "defaultLang": "en",
+    "farmingChannel": "**** ID DU SALON POUR LES MESSAGE PUBLIC DU BOT ****",
+    "startMoney": 100,
+    "devMode": false,
+    "devID": "**** ID DU DEV ****"
+  }
+}

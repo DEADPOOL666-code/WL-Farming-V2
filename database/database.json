@@ -1,0 +1,114 @@
+{
+    "objets": {
+        "graine": {
+            "kush": {
+                "prix": 5,
+                "description": {
+                    "en": "An easy to grow variety.",
+                    "fr": "Une variétée facile à cultiver."
+                },
+                "exigence": 0,
+                "temps": 10
+            },
+            "amnezia": {
+                "prix": 10,
+                "description": {
+                    "en": "A variety that requires some maintenance.",
+                    "fr": "Une variétée qui demande un peu d'entretient."
+                },
+                "exigence": 1,
+                "temps": 15
+            },
+            "purple": {
+                "prix": 15,
+                "description": {
+                    "en": "A difficult to grow variety.",
+                    "fr": "Une variétée difficile à cultiver."
+                },
+                "exigence": 2,
+                "temps": 20
+            }
+        },
+        "plante": {
+            "kush": {
+                "prix": 10,
+                "valeur": 30,
+                "description": {
+                    "en": "An easy to grow variety.",
+                    "fr": "Une variétée facile à cultiver."
+                }
+            },
+            "amnezia": {
+                "prix": 15,
+                "valeur": 45,
+                "description": {
+                    "en": "A variety that requires some maintenance.",
+                    "fr": "Une variétée qui demande un peu d'entretient."
+                }
+            },
+            "purple": {
+                "prix": 20,
+                "valeur": 50,
+                "description": {
+                    "en": "A difficult to grow variety.",
+                    "fr": "Une variétée difficile à cultiver."
+                }
+            }
+        },
+        "outils": {
+            "arrosoir": {
+                "prix": 5,
+                "name": {
+                    "en": "Watering can",
+                    "fr": "Arrosoir"
+                },
+                "description": {
+                    "en": "Watering tool for plants.",
+                    "fr": "Outil d'arrosage pour les plantes."
+                }
+            },
+            "fertilisant": {
+                "prix": 15,
+                "name": {
+                    "en": "Fertilizer",
+                    "fr": "Fertilisant"
+                },
+                "description": {
+                    "en": "Product to fertilize the soil",
+                    "fr": "Produit pour fertiliser le sol."
+                }
+            },
+            "produit_antiparasite": {
+                "prix": 10,
+                "name": {
+                    "en": "Pesticide",
+                    "fr": "Produit anti-parasite"
+                },
+                "description": {
+                    "en": "Product to fight against parasites.",
+                    "fr": "Produit pour lutter contre les parasites."
+                }
+            }
+        },
+        "parasites": {
+            "1": {
+                "name": {
+                    "en": "caterpillars",
+                    "fr": "chenilles"
+                }
+            },
+            "2": {
+                "name": {
+                    "en": "slugs",
+                    "fr": "limaces"
+                }
+            },
+            "3": {
+                "name": {
+                    "en": "red spiders",
+                    "fr": "arraigné rouges"
+                }
+            }
+        }
+    }
+}

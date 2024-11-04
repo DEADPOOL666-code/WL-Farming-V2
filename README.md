@@ -1,4 +1,4 @@
-# WL Farming V2
+# WL Farming V2 [FR/EN]
 
 ## Introduction
 ```
@@ -18,6 +18,14 @@ Vous pouvez également vendre vos plantes pour gagner de l'argent que vous pouve
 - Achat d'objets : Vous pouvez acheter des graines, des outils et de l'engrai avec l'argent que vous gagnez.
 - Inventaire : Consultez votre inventaire, qui comprend l'argent, les graines, les plantes et les outils.
 - Classement : Un classement des 10 utilisateurs les plus riches.
+- Language : Choissisez la langue d'affichage de votre jeu (FR/EN).
+```
+
+## Backup des données
+```
+- Une sauvegarde des données utilisateur est éffectuée toutes les heures, un fichier .zip est créé dans le dossier "backups", nommé au format de date JJ-MM-AAAA_-_HH-MM.
+Attention ! selon la capacité de votre hébergement il est préférable de supprimer les backups les plus anciens fréquemment (Gardez les 10 derniers).
+
 ```
 ## Commandes de jeu <permission: utilisateur>
 
