@@ -191,9 +191,9 @@ L'objet `plantations` contient les propriétés suivantes :
 ### Objets
 Les objets du jeu sont représentés par un objet JSON qui stocke les informations propres à chaque objet, tels que les graines, les plantes, les outils et leurs prix, valeur de revente, descriptions et exigences.
 
-- `graine` : Les objets de type '*graine*' ont les propriétés suivantes : prix, description et exigence (*0 = facile, 1 = normal, 2 = difficile*).
-- `plante` : Les objets de type '*plante*' ont les propriétés suivantes : valeur de revente, description.
-- `outils` : Les objets de type '*outils*' ont les propriétés suivantes : prix, description.
+- `graine` : Les objets de type '*graine*' ont les propriétés suivantes : prix, description, exigence (*0 = facile, 1 = normal, 2 = difficile*) et temps (*valeur en minute*).
+- `plante` : Les objets de type '*plante*' ont les propriétés suivantes : prix, valeur de revente, description.
+- `outils` : Les objets de type '*outils*' ont les propriétés suivantes : prix, nom (fr/en), description.
 
 ## Fichier de configuration
 Certains paramètres ont été stocké dans un fichier de configuration "config.json" afin de faciliter certaines modifications.
