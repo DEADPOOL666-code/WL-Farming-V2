@@ -212,7 +212,8 @@ Ce fichier contient :
 ![config](./readme_assets/config.png)
 
 
-## Installation
+# Installation
+## 1.Création de l'application Discord
 
 1. Connectez-vous sur le site [discord.com/developers](https://discord.com/developers/applications) avec votre compte Discord.
 2. Créez une nouvelle application.
@@ -236,11 +237,11 @@ Ce fichier contient :
 
 ![installation bot](./readme_assets/install_bot5.png)
 
-## Configuration du token, clientId et guildId dans les fichiers du bot :
+## 2. Configuration du token, clientId et guildId dans les fichiers du bot :
 
 ### Fichier .env
 
-Récupérez le fichier .env à compléter dans le dossier compressé "fichier env.rar"
+Récupérez le fichier .env à compléter dans le dossier compressé "fichier env.rar", placez le fichier .env à la racine du bot (dans le même répertoire que le fichier index.js)
 
 ![installation bot](./readme_assets/install_bot6.png)
 
